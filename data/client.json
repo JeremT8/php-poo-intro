@@ -1,0 +1,14 @@
+[
+    {
+        "numClient" : 1,
+        "nom" : "Jérémy"
+    },
+    {
+        "numClient" : 2,
+        "nom" : "Marie"
+    },
+    {
+        "numClient" : 3,
+        "nom" : "Jango"
+    }
+]
