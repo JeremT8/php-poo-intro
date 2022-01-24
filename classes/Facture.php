@@ -67,7 +67,13 @@ class Facture
         return $this;
     }
 
-
+    /**
+         * Get the value of statut
+         */ 
+        public function getStatut()
+        {
+            return $this->statut;
+        }
 
     /**
      * Set the value of statut
@@ -80,4 +86,6 @@ class Facture
 
         return $this;
     }
+
+    
 }

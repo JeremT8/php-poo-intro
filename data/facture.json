@@ -1,0 +1,23 @@
+[
+    {
+        "numFacture":  "000001",
+        "montant": 178,
+        "date": "2021-01-10",
+        "idClient": 1,
+        "statut": 2
+    },
+    {
+        "numFacture":  "000002",
+        "montant": 132,
+        "date": "2021-01-13",
+        "idClient": 1,
+        "statut": 2
+    },
+    {
+        "numFacture":  "000003",
+        "montant": 187,
+        "date": "2021-01-09",
+        "idClient": 1,
+        "statut": 2
+    }
+]

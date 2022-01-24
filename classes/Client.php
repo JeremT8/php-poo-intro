@@ -25,7 +25,7 @@ class client
     {
         $total = 0;
         foreach ($this->factures as $f) {
-            if($f->getStatut() === Facture::STATUT_PAYEE) {
+            if ($f->getStatut() === Facture::STATUT_PAYEE) {
                 $total += $f->getMontant();
             }
             
