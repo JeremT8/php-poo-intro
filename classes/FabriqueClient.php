@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * * Commentaire important 
+ *  ? Commentaire 
+ *  TODO : créer un todo 
+ *  ! Commentaire deprecié
+ *  @param string $commentaire
+ */
 class FabriqueClient {
 
     public static function getClient(int $numClient) {
