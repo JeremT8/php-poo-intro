@@ -1,14 +1,14 @@
 [
     {
-        "numClient" : 1,
-        "nom" : "Jérémy"
+        "numClient": 1,
+        "nom": "Client A"
     },
     {
-        "numClient" : 2,
-        "nom" : "Marie"
+        "numClient": 2,
+        "nom": "Client B"
     },
     {
-        "numClient" : 3,
-        "nom" : "Jango"
+        "numClient": 3,
+        "nom": "Client C"
     }
 ]

@@ -1,12 +1,13 @@
 <?php
 
+// Créer des classes client et facture
 
-class client
+class Client
 {
     private int $numClient;
     private string $nom;
-    private array $factures = [];
 
+    private array $factures = [];
 
     public function __construct(int $numClient, string $nom)
     {
@@ -14,42 +15,22 @@ class client
         $this->nom = $nom;
     }
 
-    public function addFacture(Facture $facture)
-    {
-        array_push($this->factures, $facture);
-        // ou $this->factures[] = $facture;
-        return $this;
-    }
-
-    public function getChiffreAffaire()
-    {
-        $total = 0;
-        foreach ($this->factures as $f) {
-            if ($f->getStatut() === Facture::STATUT_PAYEE) {
-                $total += $f->getMontant();
-            }
-            
-        }
-        return $total;
-    }
-
-
-    //GETTERS & SETTERS
     /**
-     * Get the value of factureList
+     * Get the value of numClient
      */
-    public function getFactureList()
+    public function getNumClient()
     {
-        return $this->factureList;
+        return $this->numClient;
     }
+
     /**
-     * Set the value of factureList
+     * Set the value of numClient
      *
      * @return  self
      */
-    public function setFactureList($factureList)
+    public function setNumClient($numClient)
     {
-        $this->factureList = $factureList;
+        $this->numClient = $numClient;
 
         return $this;
     }
@@ -61,6 +42,7 @@ class client
     {
         return $this->nom;
     }
+
     /**
      * Set the value of nom
      *
@@ -73,23 +55,21 @@ class client
         return $this;
     }
 
-    /**
-     * Get the value of numClient
-     */
-    public function getNumClient()
+    public function addFacture(Facture $facture) 
     {
-        return $this->numClient;
-    }
-    /**
-     * Set the value of numClient
-     *
-     * @return  self
-     */
-    public function setNumClient($numClient)
-    {
-        $this->numClient = $numClient;
-
+        $this->factures[] = $facture;
         return $this;
+    }
+
+    public function getChiffreAffaire(){
+        $total = 0;
+        foreach($this->factures as $f){
+            if($f->getStatut() === Facture::STATUT_PAYEE){
+                $total += $f->getMontant();
+            }   
+        }
+
+        return $total;
     }
 
     /**
